@@ -23,7 +23,7 @@ gyro.reset_angle(0)
 while True:
    angle = gyro.speed()
    print(angle)
-
+   #This part actually implements
    if angle > 3:
       robot.drive_time(5*angle+100,0, 200)
    elif angle < -3:
